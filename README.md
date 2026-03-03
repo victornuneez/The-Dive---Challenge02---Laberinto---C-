@@ -1,4 +1,4 @@
-🌀 Proyecto 2: Laberinto Maestro - C++ & BFS Algorithm
+🌀 Proyecto: Laberinto Maestro - C++ & BFS Algorithm
 
 Este proyecto es una aplicación de consola desarrollada en C++ que genera laberintos aleatorios y utiliza algoritmos de búsqueda para encontrar el camino más corto entre dos puntos.
 
