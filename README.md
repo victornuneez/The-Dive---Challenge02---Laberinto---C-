@@ -10,7 +10,7 @@ Estructuras de Datos: std::vector (matrices dinámicas), std::queue (colas FIFO)
 Librerías Clave: * <chrono> para medición de rendimiento en milisegundos.
 <cstdlib> y <ctime> para la generación de números aleatorios.
 
-🧠 Lógica y Arquitectura (Paso a Paso)
+Lógica y Arquitectura (Paso a Paso)
 Este proyecto destaca por su enfoque en la Programación Orientada a Objetos (POO) y algoritmos de grafos:
 Algoritmo BFS (Breadth-First Search): * Es el núcleo del resolvedor. Utiliza una búsqueda en anchura para explorar el laberinto nivel por nivel.
 Garantiza encontrar el camino más corto posible.
