@@ -1,47 +1,47 @@
-🌀 Proyecto: Laberinto Maestro - C++ & BFS Algorithm
+# 🌀 Proyecto: Laberinto Maestro — C++ & BFS Algorithm
 
-Este proyecto es una aplicación de consola desarrollada en C++ que genera laberintos aleatorios y utiliza algoritmos de búsqueda para encontrar el camino más corto entre dos puntos.
+Este proyecto es una aplicación de consola de alto rendimiento desarrollada en **C++** que genera laberintos aleatorios y utiliza algoritmos de teoría de grafos para encontrar la ruta óptima entre dos puntos.
 
-📖 Descripción
+## 📖 Descripción
 
-El programa permite crear laberintos de dimensiones personalizadas, garantizando siempre que exista una solución mediante un camino en "L". Además, implementa una lógica de resolución automática y proporciona estadísticas detalladas sobre la densidad de obstáculos y el tiempo de procesamiento.
+El programa permite crear laberintos de dimensiones personalizadas, garantizando siempre una solución válida mediante una lógica de pasillos predefinidos. Incluye un motor de resolución automática y un sistema de métricas para evaluar la densidad de obstáculos y el tiempo de respuesta del procesador.
 
-🛠️ Tecnologías Utilizadas
+---
 
-Lenguaje: C++ (Estándar moderno)
-Estructuras de Datos: std::vector (matrices dinámicas), std::queue (colas FIFO), struct.
-Librerías Clave: * <chrono> para medición de rendimiento en milisegundos.
-<cstdlib> y <ctime> para la generación de números aleatorios.
+## 🛠️ Tecnologías Utilizadas
 
-🧠 Lógica y Arquitectura (Paso a Paso)
+* **Lenguaje:** C++ (Estándar moderno).
+* **Estructuras de Datos:** * `std::vector`: Matrices dinámicas para el tablero.
+    * `std::queue`: Gestión de nodos para la búsqueda (FIFO).
+    * `struct`: Definición de coordenadas y estados.
+* **Librerías Clave:** * `<chrono>`: Medición de rendimiento en milisegundos con alta precisión.
+    * `<cstdlib>` y `<ctime>`: Motores de aleatoriedad para la generación procedimental.
 
-Este proyecto destaca por su enfoque en la Programación Orientada a Objetos (POO) y algoritmos de grafos:
-Algoritmo BFS (Breadth-First Search): * Es el núcleo del resolvedor. Utiliza una búsqueda en anchura para explorar el laberinto nivel por nivel.
-Garantiza encontrar el camino más corto posible.
-Utiliza una matriz de parent (padres) para reconstruir la ruta desde la salida (S) hasta la entrada (E) una vez encontrada la meta.
+---
 
-Generación Procedural:
+## 🧠 Lógica y Arquitectura
 
-Crea bordes perimetrales automáticamente.
-Asegura la jugabilidad creando un pasillo libre en los ejes principales antes de colocar paredes aleatorias.
+Este proyecto destaca por su enfoque en la **Programación Orientada a Objetos (POO)** y el procesamiento eficiente de datos:
 
-Gestión de Rendimiento:
+### 1. Algoritmo BFS (Breadth-First Search)
+Es el núcleo del sistema de resolución. A diferencia de otros algoritmos, la búsqueda en anchura:
+* **Garantiza el camino más corto:** Explora nivel por nivel todos los movimientos posibles.
+* **Reconstrucción de Ruta:** Utiliza una matriz de "padres" (`parent matrix`) para rastrear el camino desde la salida (**S**) hasta la entrada (**E**) una vez alcanzada la meta.
 
-Implementa un cronómetro de alta resolución para medir cuánto tarda el procesador en generar o resolver el laberinto, una métrica vital en el desarrollo de sistemas eficientes.
 
-Interfaz Dinámica:
 
-Permite pasar parámetros de tamaño (filas y columnas) directamente desde la línea de comandos (argc, argv).
+### 2. Generación Procedimental
+* **Seguridad de Solución:** El algoritmo asegura la jugabilidad creando un pasillo libre en los ejes principales antes de poblar el resto del mapa con paredes aleatorias.
+* **Bordes Automáticos:** Implementa lógica perimetral para evitar que el algoritmo se salga de los límites de la memoria.
 
-🚀 Cómo Ejecutarlo
-Compila el código con un compilador de C++ (como g++):
+### 3. Gestión de Rendimiento
+Incluye un cronómetro de alta resolución que mide el tiempo de ejecución en milisegundos. Esta métrica es vital para demostrar la eficiencia del algoritmo BFS sobre matrices de gran tamaño.
 
-Bash
+---
 
+## 🚀 Cómo Ejecutarlo
+
+### 1. Compilación
+Utiliza un compilador de C++ (como `g++`):
+```bash
 g++ -o laberinto laberinto.cpp
-
-Ejecuta el programa (opcionalmente definiendo el tamaño):
-
-Bash
-./laberinto 15 20
-Sigue el menú interactivo para generar, mostrar y resolver.
